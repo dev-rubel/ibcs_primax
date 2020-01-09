@@ -10962,3 +10962,16 @@ li.nav-item .active {
 .no-padding-left {
   padding-left: 0px !important;
 }
+
+.modal-backdrop {
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.invalid-feedback {
+    display: block !important;
+}

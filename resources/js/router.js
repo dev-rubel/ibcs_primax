@@ -1,20 +1,37 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Dashboard from './views/Dashboard'
-import Category from './views/Category'
+import Disiplinary from './views/Disiplinary'
+import Home from './views/Home'
+import Login from './views/Login'
 
 Vue.use(Router)
 
 const routes = [
     {
-        path: '/',
-        name: 'dashboard',
-        component: Dashboard
+        path: '/home',
+        name: 'home',
+        component: Home,
+        children: [
+            {
+                path: '',
+                name: 'dashboard',
+                component: Dashboard,
+                meta: { title: 'Dashboard' }
+            },
+            {
+                path: '/disiplinary',
+                name: 'disiplinary',
+                component: Disiplinary,
+                meta: { title: 'Disiplinary' }
+            }
+        ]
     },
     {
-        path: '/category',
-        name: 'category',
-        component: Category
+        path: '/login',
+        name: 'login',
+        component: Login,
+        meta: { title: 'Login Page' }
     }
 ]
 
