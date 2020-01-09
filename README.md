@@ -3,10 +3,12 @@
 
 - Clone this repository
 - Setup .env file
+- Run php artisan key:generate
 - Run composer install
 - Run npm install
 - Run php artisan migrate
 - Run php artisan serve
+- If any problem Run php artisan config:cache
 
 ## Url List
 - http://127.0.0.1:8000/#/home
